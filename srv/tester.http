@@ -1,0 +1,15 @@
+get http://localhost:4004/odata/v4/catalogService/EmployeeSet
+
+###
+PATCH http://localhost:4004/odata/v4/catalogService/EmployeeSet/db1b5b9f-c49e-413b-9bcb-64db8fa85ebc
+Content-Type: application/json
+ 
+{
+    "salaryAmount":1000000,
+    "Currency_code": "EUR"
+}
+
+###Pattern based filtering
+
+http://localhost:4004/odata/v4/catalogService/CustomDelete()
+
